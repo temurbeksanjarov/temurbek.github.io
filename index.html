@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Temurbekning sayti</title>
+  <style>
+    /* Umumiy sozlamalar */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Poppins', Arial, sans-serif;
+      background: linear-gradient(270deg, #7F00FF, #E100FF);
+      background-size: 400% 400%;
+      animation: gradientMove 8s ease infinite;
+      color: #fff;
+    }
+
+    @keyframes gradientMove {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    header {
+      text-align: center;
+      padding: 60px 20px 40px;
+      background: rgba(0, 0, 0, 0.25);
+      backdrop-filter: blur(6px);
+      border-bottom: 2px solid rgba(255,255,255,0.2);
+    }
+
+    header h1 {
+      font-size: 2.6em;
+      color: #FFD700;
+      margin-bottom: 10px;
+      text-shadow: 0 0 15px rgba(255,255,255,0.4);
+      animation: fadeIn 1s ease;
+    }
+
+    header p {
+      font-size: 1.1em;
+      color: #f0f0f0;
+      animation: fadeUp 1.2s ease;
+    }
+
+    nav {
+      text-align: center;
+      background: rgba(255, 255, 255, 0.1);
+      padding: 12px 0;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      backdrop-filter: blur(6px);
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 18px;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #FFD700;
+      text-shadow: 0 0 10px #FFD700;
+    }
+
+    .container {
+      max-width: 950px;
+      margin: 40px auto;
+      padding: 0 20px;
+      animation: fadeIn 1.2s ease-in;
+    }
+
+    section {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 25px;
+      margin-bottom: 25px;
+      border-radius: 12px;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 4px 25px rgba(0,0,0,0.3);
+      animation: fadeUp 1s ease;
+    }
+
+    h2 {
+      color: #FFD700;
+      margin-bottom: 12px;
+    }
+
+    p {
+      line-height: 1.6;
+      color: #f5f5f5;
+    }
+
+    /* Profil rasmi */
+    .profile {
+      text-align: center;
+      margin-bottom: 25px;
+    }
+
+    .profile img {
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      border: 4px solid #FFD700;
+      box-shadow: 0 0 25px rgba(255,215,0,0.5);
+      transition: transform 0.5s ease, box-shadow 0.5s ease;
+    }
+
+    .profile img:hover {
+      transform: scale(1.08);
+      box-shadow: 0 0 35px rgba(255,215,0,0.8);
+    }
+
+    /* Instagram tugmasi */
+    .insta {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 18px;
+      border-radius: 10px;
+      background: linear-gradient(90deg,#e1306c,#fd1d1d);
+      color: #fff;
+      text-decoration: none;
+      font-weight: 700;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .insta:hover {
+      transform: scale(1.08);
+      box-shadow: 0 0 20px #e1306c;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: rgba(0,0,0,0.4);
+      color: #ddd;
+      font-size: 0.9em;
+      border-top: 1px solid rgba(255,255,255,0.2);
+    }
+
+    /* Animatsiyalar */
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(25px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 600px) {
+      header h1 { font-size: 2em; }
+      .container { margin: 20px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Temurbekning sayti</h1>
+    <p>Kompyuter injiniring yo‘nalishi — Axborot-kommunikatsiya texnologiyalari loyihasi</p>
+  </header>
+
+  <nav>
+    <a href="#men">Men haqimda</a>
+	<a href="#portfolio">Portfolio</a>
+	<a href="loyihalar">Loyihalar</a>
+    <a href="#aloqa">Aloqa</a>
+    <a href="#rahmat">Rahmat</a>
+  </nav>
+
+  <div class="container">
+    <div class="profile">
+      <img src="https://i.ibb.co/fSvY1q5/profile-demo.jpg" alt="Temurbek rasmi">
+    </div>
+
+    <section id="men">
+      <h2>Men haqimda</h2>
+	  <p>Salom! Men Temurbek, kompyuter injiniring yo‘nalishida tahsil olaman. Ushbu sayt mening Axborot-kommunikatsiya texnologiyalari fanidagi amaliy loyiham bo‘lib, HTML va CSS asosida ishlab chiqilgan.</p>
+    </section>
+	
+	<section id="portfolio">
+  <h2>Portfolio</h2>
+  <p>Quyida mening ayrim ishlanmalarimni ko‘rishingiz mumkin:</p>
+
+  <div class="portfolio-container">
+    <div class="card">
+      <img src="https://i.ibb.co/FKShVDM/webdesign.jpg" alt="Veb-dizayn">
+      <h3>Web Design Project</h3>
+      <p>HTML va CSS asosida yaratilgan zamonaviy dizayn loyihasi.</p>
+    </div>
+
+    <div class="card">
+      <img src="https://i.ibb.co/yp1WJdW/coding.jpg" alt="Kod yozish">
+      <h3>Kod yozish amaliyoti</h3>
+      <p>Frontend sohasidagi dasturlash mashqlari va interaktiv elementlar.</p>
+    </div>
+
+    <div class="card">
+      <img src="https://i.ibb.co/SQ1C69N/techproject.jpg" alt="Texno loyiha">
+      <h3>Texno loyiha</h3>
+      <p>Kompyuter injiniring fanidan yakuniy loyiha ishlanmasi.</p>
+    </div>
+  </div>
+</section>
+
+<style>
+  .portfolio-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  .card {
+    background: rgba(255,255,255,0.1);
+    border-radius: 12px;
+    width: 280px;
+    text-align: center;
+    padding: 15px;
+    transition: 0.4s;
+    backdrop-filter: blur(6px);
+    box-shadow: 0 0 15px rgba(0,0,0,0.3);
+  }
+
+  .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 25px rgba(255,215,0,0.6);
+  }
+
+  .card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 12px;
+  }
+
+  .card h3 {
+    color: #FFD700;
+    margin-bottom: 8px;
+  }
+
+  .card p {
+    color: #eee;
+    font-size: 0.95em;
+  }
+
+  @media (max-width: 600px) {
+    .portfolio-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+</style>
+
+<section id="loyihalar">
+  <h2>Loyihalar</h2>
+  <p>🎯 “Temurbek Web Design” — shaxsiy loyiha.  
+     💻 HTML va CSS asosida kichik interaktiv sahifalar yarataman.</p>
+</section>
+
+    <section id="aloqa">
+      <h2>Aloqa uchun</h2>
+      <p>Instagram orqali menga yozishingiz mumkin:</p>
+      <a class="insta" href="https://instagram.com/thee.temur" target="_blank">@thee.temur</a>
+    </section>
+
+    <section id="rahmat">
+      <h2>E’tiboringiz uchun rahmat!</h2>
+      <p>Sayt dizayni o‘qish davomida o‘rganilgan bilimlar asosida yaratilgan. Keyingi bosqichda uni internetda ommaga taqdim etaman.</p>
+    </section>
+  </div>
+
+  <footer>
+    <p>© 2025 Temurbek. Barcha huquqlar himoyalangan.</p>
+  </footer>
+  <button class="toggle-btn" onclick="toggleDark()">🌙 Rejim</button>
+
+<script>
+  function toggleDark() {
+    document.body.classList.toggle('dark');
+  }
+</script>
+
+<style>
+  .toggle-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #FFD700;
+    border: none;
+    color: #000;
+    padding: 10px 14px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 0 15px rgba(0,0,0,0.3);
+  }
+
+  .toggle-btn:hover {
+    transform: scale(1.1);
+  }
+
+  .dark {
+    background: #121212;
+    color: #fff;
+  }
+</style>
+</body>
+</html>
